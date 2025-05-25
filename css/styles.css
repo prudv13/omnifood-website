@@ -3,7 +3,7 @@
 -- 01 Typography System --
 
 FONT SIZE (px): 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-FONT WEIGHT (px): 100 / 200 / 300 / 400 / 500 / 600 / 700 / 800 / 900
+FONT WEIGHT (px): 500 / 600 / 700
 LINE HEIGHT: 1 / 1.2 / 1.4 / 1.6
 
 -- 02 Color System --
@@ -16,7 +16,7 @@ LINE HEIGHT: 1 / 1.2 / 1.4 / 1.6
 
 -- 03 Shadows --
 
--- 04 Border Radius --
+-- 04 Border Radius -- 8px
 
 -- 05 Whitespace --
 
@@ -108,6 +108,41 @@ body {
 
     height: 9.6rem;
     padding: 0 4.8rem;
+}
+
+/* ------------------------------ */
+/* NAVIGATION */
+/* ------------------------------ */
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link, .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover, .main-nav-link:active {
+    color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
+    color: #fff;
+    background-color: #e67e22;
+    padding: 1.2rem 2.4rem;
+    border-radius: 8px;
+}
+
+.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
+    background-color: #cf711f;
 }
 
 /* ------------------------------ */
